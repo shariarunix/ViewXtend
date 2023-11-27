@@ -1,7 +1,7 @@
 # ViewXtend
 > Step 1. Add the JitPack repository to your build file
 
-> Add it in your root build.gradle at the end of repositories:
+> Add it in your root settings.gradle at the end of repositories:
 ```
 dependencyResolutionManagement {
   repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
