@@ -21,7 +21,8 @@
             android:paddingHorizontal="20dp"
             android:text="ViewXtend"
             android:textColor="@color/blue"
-            android:textSize="32sp" />
+            android:textSize="32sp"
+            tools:ignore="HardcodedText" />
 
         <View
             android:layout_width="match_parent"
@@ -58,7 +59,8 @@
                     android:gravity="center"
                     android:text="author : shariarunix"
                     android:textColor="@color/white"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    tools:ignore="HardcodedText" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -68,9 +70,35 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/ubuntu_regular"
             android:padding="20dp"
+            android:text="Horizontal Grid View"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:scrollbarThumbHorizontal="@android:color/transparent">
+
+            <LinearLayout
+                android:id="@+id/ll_horz_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp" />
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_regular"
+            android:padding="20dp"
             android:text="Grid View"
             android:textColor="@color/black"
-            android:textSize="22sp" />
+            android:textSize="22sp"
+            tools:ignore="HardcodedText" />
 
         <com.shariarunix.viewxtend.GridXtend
             android:id="@+id/grid_xtend"
@@ -92,7 +120,8 @@
             android:padding="20dp"
             android:text="List View"
             android:textColor="@color/black"
-            android:textSize="22sp" />
+            android:textSize="22sp"
+            tools:ignore="HardcodedText" />
 
         <com.shariarunix.viewxtend.ListXtend
             android:id="@+id/list_xtend"

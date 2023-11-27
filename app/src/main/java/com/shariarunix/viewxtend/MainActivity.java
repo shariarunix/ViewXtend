@@ -6,11 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
     GridXtend myGrid;
     ListXtend myList;
+
+    LinearLayout llHorzGrid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +22,13 @@ public class MainActivity extends AppCompatActivity {
 
         myGrid = findViewById(R.id.grid_xtend);
         myList = findViewById(R.id.list_xtend);
+        llHorzGrid = findViewById(R.id.ll_horz_grid);
+
+        for (int i = 0; i < 5; i++) {
+            View myView = getLayoutInflater().inflate(R.layout.horz_item, llHorzGrid, false);
+
+            llHorzGrid.addView(myView);
+        }
 
         myGrid.setXtend(true);
         myList.setXtend(true);
