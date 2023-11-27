@@ -19,3 +19,9 @@ dependencies {
   implementation 'com.github.shariarunix:ViewXtend:1.0.0'
 }
 ```
+
+> If you want to see the demo, Please download the rep and run the file.
+
+> Thanks
+
+> shariarUnix
